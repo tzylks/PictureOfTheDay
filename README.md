@@ -12,7 +12,7 @@ npm install
 
 ## Run
 
-This application will run on PORT:4000
+This application will run on PORT:3000
 
 ```
 npm start
