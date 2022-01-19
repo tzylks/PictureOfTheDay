@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Cards from "./components/Cards"
 import LinearProgress from '@mui/material/LinearProgress';
 import AppBar from "./components/AppBar"
