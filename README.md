@@ -24,6 +24,7 @@ npm start
 - Styled utilizing Material-UI v5 (MUI).
 - Mobile responsive.
 - Can like an image.
+- Loader when waiting for API response
 
 ## Limitations
 
