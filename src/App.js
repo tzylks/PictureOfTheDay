@@ -15,16 +15,15 @@ function App() {
       .then((data) => setNasaData(data));
   }, []);
 
-  const searchFilter = nasaData.filter(word => 
+  const searchFilter = nasaData.filter(word =>
     word.title.toLowerCase().includes(search.toLowerCase())
   )
 
   return (
     <>
       <AppBar search={search} setSearch={setSearch} />
-      {nasaData ?
-        <Cards nasaData={searchFilter} /> : <LinearProgress color="success" sx={{ marginTop: '30%' }} />
-      }
+        <Cards nasaData={searchFilter} /> 
+      { nasaData.length < 1 ? <LinearProgress color="success" sx={{ marginTop: '30%' }} /> : null }
     </>
   );
 }

@@ -11,7 +11,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useState } from 'react'
 
 export default function PhotoCard({ photoData }) {
-
+    
     const [iconColor, setIconColor] = useState(false)
 
     const hoverColor = () => setIconColor(!iconColor);
@@ -45,7 +45,7 @@ export default function PhotoCard({ photoData }) {
                         {photoData.explanation}
                     </Typography>
                 </CardContent>
-                <CardActions disablespacing>
+                <CardActions>
                     <IconButton>
                         <FavoriteIcon onClick={hoverColor} sx={{ color: iconColor ? 'red' : 'gray' }} />
                     </IconButton>
